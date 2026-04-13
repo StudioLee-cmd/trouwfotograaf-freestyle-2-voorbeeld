@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — LiefdeBlik Trouwfotografie Rotterdam</title>
+  <meta name="description" content="Bruiloftsinspiratie, tips en verhalen van LiefdeBlik Rotterdam.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="/" class="nav-logo">LiefdeBlik</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about">Over ons</a></li>
+        <li><a href="index.html#services">Diensten</a></li>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="index.html#reviews">Reviews</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <a href="index.html#contact" class="nav-cta">Contact</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="blog-hero">
+    <div class="container">
+      <h1>Onze <span>Blog</span></h1>
+      <p>Inspiratie, tips en mooie verhalen over bruiloften en liefde.</p>
+    </div>
+  </section>
+
+  <section class="blog-listing">
+    <div class="container">
+      <div class="blog-grid">
+        <div class="blog-featured blog-card reveal">
+          <img src="images/hero.jpg" alt="Bruiloft trends">
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Uitgelicht</span>
+            <h3>De romantische bruiloftstrends van 2026</h3>
+            <p>Zachte tinten, verse bloemen en filmische fotografie — dit zijn de trends die dit jaar de boventoon voeren bij bruidsparen in heel Nederland.</p>
+            <a href="#" class="read-more">Lees meer &rarr;</a>
+          </div>
+        </div>
+        <div class="blog-card reveal"><img src="images/craft.jpg" alt="Tips"><div class="blog-card-body"><span class="blog-card-tag">Tips</span><h3>Hoe kies je de juiste trouwfotograaf?</h3><p>Vijf vragen die u moet stellen voor u boekt.</p><a href="#" class="read-more">Lees meer &rarr;</a></div></div>
+        <div class="blog-card reveal"><img src="images/kitchen.jpg" alt="Locaties"><div class="blog-card-body"><span class="blog-card-tag">Locaties</span><h3>Top 5 trouwlocaties in Rotterdam</h3><p>De mooiste plekken voor fotogenieke bruiloften.</p><a href="#" class="read-more">Lees meer &rarr;</a></div></div>
+        <div class="blog-card reveal"><img src="images/carousel.jpg" alt="Loveshoot"><div class="blog-card-body"><span class="blog-card-tag">Loveshoot</span><h3>De perfecte loveshoot: zo doe je dat</h3><p>Tips om er ontspannen en naturel uit te zien.</p><a href="#" class="read-more">Lees meer &rarr;</a></div></div>
+        <div class="blog-card reveal"><img src="images/detail.jpg" alt="Album"><div class="blog-card-body"><span class="blog-card-tag">Album</span><h3>Zo stel je het perfecte album samen</h3><p>Kies de juiste foto's voor een tijdloos aandenken.</p><a href="#" class="read-more">Lees meer &rarr;</a></div></div>
+        <div class="blog-card reveal"><img src="images/project1.jpg" alt="Seizoenen"><div class="blog-card-body"><span class="blog-card-tag">Seizoenen</span><h3>Lentebruiloft: fris en kleurrijk</h3><p>Waarom lente het perfecte seizoen is voor uw trouwdag.</p><a href="#" class="read-more">Lees meer &rarr;</a></div></div>
+        <div class="blog-card reveal"><img src="images/project2.jpg" alt="Inspiratie"><div class="blog-card-body"><span class="blog-card-tag">Inspiratie</span><h3>Intieme bruiloft: klein maar fijn</h3><p>De voordelen van een bruiloft met een kleine groep.</p><a href="#" class="read-more">Lees meer &rarr;</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="cta-content">
+      <h2>Laten we uw <span>liefde</span> vastleggen</h2>
+      <p>Neem contact op voor een vrijblijvend gesprek.</p>
+      <a href="index.html#contact" class="btn-primary">Plan een gesprek</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="/" class="nav-logo">LiefdeBlik</a><p>Romantische trouwfotografie vanuit Rotterdam.</p></div>
+        <div><h4>Diensten</h4><ul><li><a href="index.html#services">Bruiloftsfotografie</a></li><li><a href="index.html#services">Loveshoot</a></li></ul></div>
+        <div><h4>Bedrijf</h4><ul><li><a href="index.html#about">Over ons</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+        <div><h4>Contact</h4><ul><li><a href="mailto:info@liefdeblik.nl">info@liefdeblik.nl</a></li><li><a href="tel:+31101234567">010-1234567</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 LiefdeBlik. Alle rechten voorbehouden.</p></div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    lucide.createIcons();
+    window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); });
+    document.getElementById('hamburger').addEventListener('click', () => { document.getElementById('navLinks').classList.toggle('open'); });
+    gsap.registerPlugin(ScrollTrigger);
+    document.querySelectorAll('.reveal').forEach(el => {
+      gsap.fromTo(el, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: .8, ease: 'power2.out', scrollTrigger: { trigger: el, start: 'top 85%', once: true } });
+    });
+  </script>
+</body>
+</html>
